@@ -6,7 +6,7 @@ const ExpenseForm = () => {
   const [enteredAmount, setEnteredAmount] = useState("");
   const [enteredDate, setEnteredDate] = useState("");
 
-  // using single state instead
+  // using single state instead - use if necessary
   //   const [userInput, setUserInput] = useState({
   //     enteredTitle: '',
   //     entertedAmount: '',
@@ -23,7 +23,7 @@ const ExpenseForm = () => {
     setEnteredDate(event.target.value);
   };
 
-  //shared handler function
+  //shared handler function - use if necessary
   //   const inputChnageHandler = (identifier, value) => {
   //     if (identifier === "title") {
   //       setEnteredTitle(value);
@@ -46,7 +46,7 @@ const ExpenseForm = () => {
     setEnteredAmount('');
     setEnteredDate('');
   };
-  
+
   return (
     <form onSubmit={submitHandler}>
       <div className="new-expense__controls">
